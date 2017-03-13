@@ -44,11 +44,11 @@ Use Postman to test the API. Alternatively, you can use the Swagger UI at
 
     http://localhost:49167/swagger
 
-Open the `translate` operation. Under Parameters, if you click in the yellow box under Data Type, the example value
-is copied into the body value.
+Open the `translate` operation. Copy the following text into the body
 
-Change the `` property to "Hello". Click on the small "Try it out!" button under the "Response Messages"
-section. In the "Response Body" further below, ...
+    {"bot_id":"522ea4e8-2057-451c-ae4c-2681f74917bc","dialog_id":"4ca761f0-9c70-4b63-b48e-9f23f56e017b","message":{"text":["Please select one of the following options."],"context":{"CurrentWorkspace":"Custom Workspace","dialog_in_progress":false,"system":{"dialog_request_counter":2.0,"dialog_turn_counter":2.0,"dialog_stack":[{"dialog_node":"Complaint"}],"_node_output_map":{"Complaint":[0.0]}},"wva":{"intents":[{"intent":"Complaints-Misc","confidence":0.9999999931997042}]},"conversation_id":"da5912f7-d974-4790-b46d-3ca85ecdd434"},"layout":{"name":"choose"},"inputvalidation":{"oneOf":["Chat with an Agent","Lodge a Complaint"]},"intents":[{"confidence":0.9999999931997042,"intent":"Complaints-Misc"}],"log_data":{"wva_top_intent":{"confidence":0.9999999931997042,"intent":"Complaints-Misc"},"show_intent_link":true,"intents":[{"confidence":0.9999999931997042,"intent":"Complaints-Misc"}],"default_voyager_workspace":false,"entities":[],"first_call_log":false},"node_position":"ROOT"}}
 
-Next, set the `` property to your name. This time, when you click on "Try it out!", ...
-should be shown.
+Enter `1234` for the sender.
+
+Click on the small "Try it out!" button under the "Response Messages" section. In the "Response Body" further below,
+a 'quick reply' message formatted for Facebook Messenger should be shown.
