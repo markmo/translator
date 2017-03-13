@@ -26,6 +26,8 @@ class SwaggerDocService(system: ActorSystem, config: Config) extends SwaggerHttp
 
   override val info = Info(version = "1.0")
 
+  override val apiDocsPath = "translator-api-docs"
+
   //override val externalDocs = Some(new ExternalDocs("Docs", "http://aiplatform.host"))
 
   //override val securitySchemeDefinitions = Map("basicAuth" -> new BasicAuthDefinition())
